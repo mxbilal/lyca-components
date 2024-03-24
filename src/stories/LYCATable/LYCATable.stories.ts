@@ -1,7 +1,6 @@
 import { StoryObj, Meta } from "@storybook/react";
 import { fn } from "@storybook/test";
 import UseTable from "./LYCATable";
-import { useArgs } from "@storybook/preview-api";
 
 const meta = {
   title: "LYCA Components/LYCATable",
