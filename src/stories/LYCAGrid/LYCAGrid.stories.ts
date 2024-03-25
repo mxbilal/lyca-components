@@ -1,5 +1,4 @@
 import { StoryObj, Meta } from "@storybook/react";
-import { fn } from "@storybook/test";
 import ListingGrid from "./LYCAGrid";
 
 const meta = {
