@@ -222,9 +222,8 @@ const theme = createTheme({
       lineHeight: "24px",
       fontSize: "16px",
     },
-    drawerItems: {
+    variant6: {
       fontFamily: "'Poppins', 'Public Sans', sans-serif",
-      color: "#ffffff",
       fontSize: "13px",
     },
     dashboardItem: {

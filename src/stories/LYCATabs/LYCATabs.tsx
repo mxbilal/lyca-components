@@ -3,8 +3,6 @@ import { Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Tabs from "@mui/material/Tabs";
 import Tab, { TabProps } from "@mui/material/Tab"; // Import TabProps for type safety
-import activeTab from "../assets/lyca/activeTab.svg";
-import NonActiveTab from "../assets/lyca/nonActive.svg";
 
 const AntTabs = styled(Tabs)({
   "& .MuiTabs-indicator": {
@@ -20,7 +18,7 @@ const AntTabs = styled(Tabs)({
   },
   "& .Mui-selected": {
     color: "white !important",
-    backgroundImage: `url(${activeTab}) !important`,
+    backgroundImage: `url(/active-tab.svg) !important`,
     backgroundSize: "contain",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
@@ -29,7 +27,7 @@ const AntTabs = styled(Tabs)({
     zIndex: "1 !important",
   },
   "& .MuiButtonBase-root.MuiTab-root": {
-    backgroundImage: `url(${NonActiveTab})`,
+    backgroundImage: `url(/non-active.svg)`,
     backgroundSize: "contain",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",

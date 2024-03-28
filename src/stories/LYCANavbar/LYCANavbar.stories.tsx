@@ -1,39 +1,36 @@
 import { StoryObj, Meta } from "@storybook/react";
 import LYCANavbar from "./LYCANavbar";
 
+const data = {
+  id: 7,
+  bio: "test",
+  initial: "TA",
+  fullName: "Test Administrators",
+  phoneNumber: "8347834",
+  email: "testadministrator@lyca.com",
+  profileImagePath:
+    "/1/ProfileImages/User/7/01a46a6c-4ca2-4106-963e-cfe122d8ab14_Screenshot2024-02-27105807.png",
+  role: "Administrator",
+};
+const { fullName, role } = data;
 const meta = {
   title: "LYCA Components/LYCANavbar",
   component: LYCANavbar,
   tags: ["autodocs"],
+  parameters: {
+    backgrounds: {
+      default: "tool",
+      values: [{ name: "tool", value: "#f8f9ff" }],
+    },
+  },
 } satisfies Meta<typeof LYCANavbar>;
 export default meta;
 type Story = StoryObj<typeof meta>;
 export const Default: Story = {
-  render: () => <LYCANavbar />,
-  //   args: {
-  //     columns: [
-  //       { field: "id", headerName: "ID", flex: 0.01 },
-  //       { field: "name", headerName: "Name", flex: 0.1 },
-  //       { field: "age", headerName: "Age", flex: 0.1 },
-  //     ],
-  //     gridData: {
-  //       data: [
-  //         { id: 1, name: "John Doe", age: 30 },
-  //         { id: 2, name: "Jane Smith", age: 25 },
-  //         { id: 3, name: "Michael Johnson", age: 40 },
-  //       ],
-  //       totalPages: 1,
-  //       totalRecords: 3,
-  //     },
-  //     pageChange: () => {}, // Replace with your pageChange function
-  //     columnSort: () => {}, // Replace with your columnSort function
-  //     loader: false,
-  //   },
-};
+  args: {
+    title: "Dashboard",
+    user: { fullName, role },
+  },
 
-// export const WithActions: Story = {
-//   args: {
-//     ...Default.args,
-//     action: true,
-//   },
-// };
+  render: () => <LYCANavbar title="Dashboard" user={{ fullName, role }} />,
+};
