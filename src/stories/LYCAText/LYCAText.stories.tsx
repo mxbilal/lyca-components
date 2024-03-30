@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { LYCAText } from "./LYCAText";
+import LYCAText from ".";
 
-const meta = {
+const meta: Meta = {
   title: "LYCA Components/LYCAText",
   component: LYCAText,
   parameters: {

@@ -1,6 +1,6 @@
 import { StoryObj, Meta } from "@storybook/react";
 import { fn } from "@storybook/test";
-import UseTabs from "./LYCATabs";
+import UseTabs from ".";
 import { useArgs } from "@storybook/preview-api";
 
 const meta = {

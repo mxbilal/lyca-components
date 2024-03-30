@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from "@storybook/react";
-import LYCADrawer from "./LYCADrawer";
+import LYCADrawer from ".";
 import service from "../assets/lyca/sidebar/service.svg";
 import serviceSelected from "../assets/lyca/sidebar/service_white.svg";
 import jobs from "../assets/lyca/sidebar/jobs.svg";
@@ -22,7 +22,7 @@ const Sidebar = [
     selectedIcon: jobsSelected,
   },
 ];
-const meta = {
+const meta: Meta = {
   title: "LYCA Components/LYCADrawer",
   component: LYCADrawer,
   tags: ["autodocs"],

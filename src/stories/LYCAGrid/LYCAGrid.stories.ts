@@ -1,7 +1,7 @@
 import { StoryObj, Meta } from "@storybook/react";
-import ListingGrid from "./LYCAGrid";
+import ListingGrid from ".";
 
-const meta = {
+const meta: Meta = {
   title: "LYCA Components/LYCAGrid",
   component: ListingGrid,
   tags: ["autodocs"],

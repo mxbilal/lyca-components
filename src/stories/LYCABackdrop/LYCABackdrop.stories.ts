@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import LYCABackdrop from "./LYCABackdrop";
+import LYCABackdrop from ".";
 
 const meta = {
   title: "LYCA Components/LYCABackdrop",

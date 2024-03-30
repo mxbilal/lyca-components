@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from "@storybook/react";
-import LYCANavbar from "./LYCANavbar";
+import LYCANavbar from ".";
 
 const data = {
   id: 7,
@@ -13,7 +13,7 @@ const data = {
   role: "Administrator",
 };
 const { fullName, role } = data;
-const meta = {
+const meta: Meta = {
   title: "LYCA Components/LYCANavbar",
   component: LYCANavbar,
   tags: ["autodocs"],

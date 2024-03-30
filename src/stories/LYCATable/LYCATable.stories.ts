@@ -1,8 +1,8 @@
 import { StoryObj, Meta } from "@storybook/react";
 import { fn } from "@storybook/test";
-import UseTable from "./LYCATable";
+import UseTable from ".";
 
-const meta = {
+const meta: Meta = {
   title: "LYCA Components/LYCATable",
   component: UseTable,
   tags: ["autodocs"],

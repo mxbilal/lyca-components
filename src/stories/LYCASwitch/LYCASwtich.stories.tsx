@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from "@storybook/react";
-import UseSwitch from "./LYCASwitch";
+import UseSwitch from ".";
 import { useArgs } from "@storybook/preview-api";
 
 const meta: Meta<typeof UseSwitch> = {
