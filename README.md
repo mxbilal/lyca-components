@@ -16,3 +16,5 @@ You can import and use the components provided by LYCA Components in your React 
 
 Contributing
 Contributions to LYCA Components are welcome! If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request on the GitHub repository.
+
+[![npm version](https://img.shields.io/npm/v/lyca-components.svg)](https://www.npmjs.com/package/lyca-components)
