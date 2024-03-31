@@ -15,6 +15,7 @@ import {
   AccountCircle as AccountCircleIcon,
   Logout as LogoutIcon,
 } from "@mui/icons-material";
+import withThemeProvider from "../WithTheme";
 
 interface NavbarProps {
   title: string;
@@ -120,4 +121,4 @@ const LYCANavbar = ({ title, user }: NavbarProps) => {
   );
 };
 
-export default LYCANavbar;
+export default withThemeProvider(LYCANavbar);

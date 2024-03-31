@@ -9,6 +9,7 @@ import {
   Toolbar,
   Drawer,
 } from "@mui/material";
+import withThemeProvider from "../WithTheme";
 
 interface SidebarItem {
   name: string;
@@ -86,4 +87,4 @@ const LYCADrawer = ({
   );
 };
 
-export default LYCADrawer;
+export default withThemeProvider(LYCADrawer);

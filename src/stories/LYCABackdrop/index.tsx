@@ -1,5 +1,6 @@
 import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
+import withThemeProvider from "../WithTheme";
 
 type Props = { open: boolean };
 function CustomBackDrop({ open }: Props) {
@@ -13,4 +14,4 @@ function CustomBackDrop({ open }: Props) {
   );
 }
 
-export default CustomBackDrop;
+export default withThemeProvider(CustomBackDrop);

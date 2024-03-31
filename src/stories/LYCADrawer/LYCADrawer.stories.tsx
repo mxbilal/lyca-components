@@ -42,7 +42,7 @@ export const Default: Story = {
   render: () => (
     <LYCADrawer
       sidebarItems={Sidebar}
-      onItemClick={(path) => console.log(path)}
+      onItemClick={(path:any) => console.log(path)}
       pathname="/service"
     />
   ),

@@ -1,5 +1,5 @@
-import { Button, ThemeProvider } from "@mui/material";
-import theme from "../../theme";
+import { Button } from "@mui/material";
+import withThemeProvider from "../WithTheme";
 interface ButtonProps {
   label: string;
   variant?: any;
@@ -15,7 +15,6 @@ const LYCAButton = ({
   ...props
 }: ButtonProps) => {
   return (
-    <ThemeProvider theme={theme}>
       <Button
         variant={variant}
         size={size}
@@ -24,7 +23,6 @@ const LYCAButton = ({
       >
         {label}
       </Button>
-    </ThemeProvider>
   );
 };
-export default LYCAButton;
+export default withThemeProvider(LYCAButton);

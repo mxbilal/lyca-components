@@ -3,6 +3,7 @@ import { Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Tabs from "@mui/material/Tabs";
 import Tab, { TabProps } from "@mui/material/Tab"; // Import TabProps for type safety
+import withThemeProvider from "../WithTheme";
 
 const AntTabs = styled(Tabs)({
   "& .MuiTabs-indicator": {
@@ -72,4 +73,4 @@ function UseTabs({ tab, setTab, list }: UseTabsProps) {
   );
 }
 
-export default UseTabs;
+export default withThemeProvider(UseTabs);

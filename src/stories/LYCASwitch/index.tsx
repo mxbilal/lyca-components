@@ -1,5 +1,6 @@
 import { styled } from "@mui/material/styles";
 import { FormControlLabel, Switch } from "@mui/material";
+import withThemeProvider from "../WithTheme";
 
 const IOSSwitch = styled((props) => (
   <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
@@ -72,4 +73,4 @@ const UseSwitch = ({
   );
 };
 
-export default UseSwitch;
+export default withThemeProvider(UseSwitch);

@@ -1,8 +1,8 @@
 import { DataGrid, GridPagination, GridColDef } from "@mui/x-data-grid";
 import Pagination from "@mui/material/Pagination";
 import notFound from "../assets/lyca/not-found.svg";
-// @ts-ignore
 import theme from "../../theme";
+import withThemeProvider from "../WithTheme";
 
 interface ListingGridProps {
   columns: GridColDef[];
@@ -102,4 +102,4 @@ const ListingGrid = ({
   );
 };
 
-export default ListingGrid;
+export default withThemeProvider(ListingGrid);

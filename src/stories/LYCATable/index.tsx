@@ -6,6 +6,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import deleteIcon from "../assets/lyca/delete.svg";
 import editIcon from "../assets/lyca/edit.svg";
+import withThemeProvider from "../WithTheme";
 
 interface Column {
   key: string;
@@ -39,7 +40,7 @@ const UseTable = ({
   function getNestedValue(obj: any, path: string) {
     const keys = path.split(".");
     let result = obj;
-    for (let key of keys) {
+    for (const key of keys) {
       result = result?.[key];
     }
     return result;
@@ -145,4 +146,4 @@ const UseTable = ({
   );
 };
 
-export default UseTable;
+export default withThemeProvider(UseTable);
